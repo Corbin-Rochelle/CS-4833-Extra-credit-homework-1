@@ -11,12 +11,12 @@ int main() {
     int i;
 
     printf("-------------\nWhich file do you wish to analyze?\n1. Quick Sort\n2. Selection Sort\n3. Hybrid\n-------------\n: ");
-    scanf("%d", choose); 
+    scanf("%d", &choose); 
 
     switch (choose)
     {
     case 1:
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 100; i++) {
             double time_spent = 0.0;
             startTest = startTest + 10;
             int arr[startTest];
@@ -33,11 +33,12 @@ int main() {
             clock_t end = clock();
 
             time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
-            printf("The elapsed time is %f seconds", time_spent);
+            printf("%f", time_spent);
+            printf("\n");
         }
         break;
     case 2: 
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 100; i++) {
             double time_spent = 0.0;
             startTest = startTest + 10;
             int arr[startTest];
@@ -54,7 +55,8 @@ int main() {
             clock_t end = clock();
 
             time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
-            printf("The elapsed time is %f seconds", time_spent);
+            printf("%f", time_spent);
+            printf("\n");
         }
         break;
     case 3:
