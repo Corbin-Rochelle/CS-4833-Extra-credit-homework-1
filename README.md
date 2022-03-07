@@ -1,4 +1,4 @@
-# CS-4833-Extra-credit-homework-1
+# CS 4833 Extra Credit Homework 1
 
 ## Overview
 This Project was complied in clang and ran on an ARM Macbook Pro.
