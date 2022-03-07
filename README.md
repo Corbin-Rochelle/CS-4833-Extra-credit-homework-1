@@ -4,6 +4,11 @@
 This Project was complied in clang and ran on an ARM Macbook Pro.
 The goal of this code was to explore the run times of two different algorithms, Quicksort and Selection Sort.
 
+When first creating this project, I started out in Python; however I found the time to sort even small input arrays to be on the order of seconds.
+I realized this would become a problem when needing to take multiple runs at high input sizes;
+so I decided to switch to C. 
+After switching to C I found runtimes to be very short, which solved this problem. 
+
 ## Theory
 Theoretically, what should happen is that Selection sort beats out quicksort for very small input sizes, but should lose to quicksort for larger sized inputs. 
 This is because of each function's asymptotic complexity classes. 
